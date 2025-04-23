@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>ENTREGAS</title>
+    </head>
+    <body background="fondo6.jpg">
+        <center>
+            <br><br><br><br>
+            <img src="logotipo.png">
+            <h1>DATOS DE ENTREGAS</h1>
+            <form action="Conexion-Entregas.php" method="POST">
+                <table>
+                    <tr>
+                        <td>Producto:</td>
+                        <td><input type="text" name="Producto"></td>
+                    </tr>
+
+                    <tr>
+                       <td>Cantidad:</td>
+                       <td><input type="text" name="Cantidad"></td>
+                 </tr>
+
+                 <tr>
+                    <td>Fecha_Entrega:</td>          
+                    <td><input type="text" name="Fecha_Entrega"></td>
+                </tr>
+
+                <tr>
+                    <td>Direccion:</td>
+                <td><input type="text" name="Direccion"></td>
+                </tr>
+                
+              <tr>
+                <td>Condicion:</td>
+                <td>
+                <select id="Codicion" name="Condicion">
+                    <option value="Seleccion">Seleccion</option>
+                    <option value="Bueno">Bueno</option>
+                    <option value="Dañado">Dañado</option>
+                    <option value="Faltante">Faltante</option>
+                </select>
+                </td>
+                </tr>
+            </table>
+                
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+                
+            </form>
+        </center>
+    </body>
+</html>

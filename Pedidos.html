@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>PEDIDOS</title>
+</head>
+<body background="fondo4.4.jpg">
+    <center>
+        <br><br><br><br>
+    <img src="logotipo.png">
+    <h1>DATOS DE LOS PEDIDOS</h1>
+    <form action="Conexion-Pedidos.php" method="POST">
+        <table>
+            <tr>
+                <td>Producto:</td>
+                <td><input type="text" name="Producto"></td>
+            </tr>
+
+            <tr>
+                <td>Cantidad:</td>
+                <td><input type="text" name="Cantidad"></td>
+            </tr>
+
+
+            <tr>
+                <td>Fecha_Pedido:</td>
+                <td><input type="text" name="Fecha_Pedido"></td>
+            </tr>
+
+            <tr>
+                <td>Fecha_Entrega:</td>
+                <td><input type="text" name="Fecha_Entrega"></td>
+            </tr>
+
+
+            <tr>
+                <td>Estado:</td>
+                <td>
+                    <select id="Estado" name="Estado">
+                        <option value="Seleccion">Seleccion</option>
+                        <option value="Pendiente">Pendiente</option>
+                        <option value="Transito">Transito</option>
+                        <option value="Entregado">Entregado</option>
+                        <option value="Retrasado">Retrasado</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">  
+                
+    </form>
+    </center>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Login</title>
+<meta charset="UTF-8">
+<meta name="riewport" content="width= device-witch">
+</head>
+<body style="background-image: url(fondo.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed">
+<center>
+<script>
+function usrpas(){
+if (document.X.txtusuario.value=="Lila" &&
+document.X.txtpassword.value=="130613") 
+{
+window.location="botones.html"   
+}
+else {
+alert("Error en el usuario o contraseña. Intente de nuevo.")
+}
+}
+document.oncontextmenu=new Function("return false");
+</script>
+<pre>
+    <br><br><br><br>
+<img src="logotipo.png">
+</pre>
+<h2>INGRESO AL SISTEMA DE LA EMPRESA TOYOTA</h2>
+<img src="candado.png">
+<form method="POST" name="X">
+<input type="text" placeholder="Usuario" name="txtusuario"/><br>
+<input type="password" placeholder="Contraseña" name="txtpassword"/><br>
+<input type="button" value="Entrar" onclick="usrpas()">
+</form>
+</center>
+</body>
+</html>
